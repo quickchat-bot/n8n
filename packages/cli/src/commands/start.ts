@@ -280,6 +280,11 @@ export class Start extends Command {
 				const nodeTypes = NodeTypes(loadNodesAndCredentials);
 				const credentialTypes = CredentialTypes(loadNodesAndCredentials);
 
+				if (process.env.N8N_DEV_RELOAD === 'true') {
+					const { reloadNodesAndCredentials } = await import('@/ReloadNodesAndCredentials');
+					reloadNodesAndCredentials(loadNodesAndCredentials);
+				}
+
 				// Load the credentials overwrites if any exist
 				await CredentialsOverwrites(credentialTypes).init();
 

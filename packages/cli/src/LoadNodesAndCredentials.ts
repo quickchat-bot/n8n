@@ -42,6 +42,8 @@ export class LoadNodesAndCredentialsClass implements INodesAndCredentials {
 
 	types: Types = { nodes: [], credentials: [] };
 
+	packagePaths: string[] = [];
+
 	excludeNodes = config.getEnv('nodes.exclude');
 
 	includeNodes = config.getEnv('nodes.include');
@@ -96,10 +98,15 @@ export class LoadNodesAndCredentialsClass implements INodesAndCredentials {
 	async loadNodesFromBasePackages() {
 		const nodeModulesPath = await this.getNodeModulesPath();
 		const nodePackagePaths = await this.getN8nNodePackages(nodeModulesPath);
+		this.packagePaths = nodePackagePaths;
 
 		for (const packagePath of nodePackagePaths) {
 			await this.runDirectoryLoader(LazyPackageDirectoryLoader, packagePath);
 		}
+	}
+
+	async reloadNodesFromBasePackage(packagePath: string) {
+		await this.runDirectoryLoader(LazyPackageDirectoryLoader, packagePath, true);
 	}
 
 	async loadNodesFromDownloadedPackages(): Promise<void> {
@@ -313,12 +320,29 @@ export class LoadNodesAndCredentialsClass implements INodesAndCredentials {
 	private async runDirectoryLoader<T extends DirectoryLoader>(
 		constructor: new (...args: ConstructorParameters<typeof DirectoryLoader>) => T,
 		dir: string,
+		isReload?: boolean,
 	) {
 		const loader = new constructor(dir, this.excludeNodes, this.includeNodes);
 		await loader.loadAll();
 
 		// list of node & credential types that will be sent to the frontend
 		const { types } = loader;
+
+		if (isReload) {
+			for (const nodeType of types.nodes) {
+				const existingIndex = this.types.nodes.findIndex((n) => n.name === nodeType.name);
+				if (existingIndex !== -1) {
+					this.types.nodes.splice(existingIndex, 1);
+				}
+			}
+			for (const credType of types.credentials) {
+				const existingIndex = this.types.credentials.findIndex((c) => c.name === credType.name);
+				if (existingIndex !== -1) {
+					this.types.credentials.splice(existingIndex, 1);
+				}
+			}
+		}
+
 		this.types.nodes = this.types.nodes.concat(types.nodes);
 		this.types.credentials = this.types.credentials.concat(types.credentials);
 
@@ -330,15 +354,34 @@ export class LoadNodesAndCredentialsClass implements INodesAndCredentials {
 				const iconUrl = `icons/${typeName}/${type.name}${path.extname(icon)}`;
 				delete type.icon;
 				type.iconUrl = iconUrl;
-				const source = path.join(dir, icon);
-				const destination = path.join(GENERATED_STATIC_DIR, iconUrl);
-				return mkdir(path.dirname(destination), { recursive: true }).then(async () =>
-					copyFile(source, destination),
-				);
+				if (!isReload) {
+					const source = path.join(dir, icon);
+					const destination = path.join(GENERATED_STATIC_DIR, iconUrl);
+					return mkdir(path.dirname(destination), { recursive: true }).then(async () =>
+						copyFile(source, destination),
+					);
+				}
+				return;
 			}),
 		);
 
 		await Promise.all(iconPromises);
+
+		// Unload everything that's should be lazy loaded so it'll get
+		// reimported later on
+		if (isReload && loader instanceof PackageDirectoryLoader) {
+			for (const type in loader.known.nodes) {
+				if (type in this.loaded.nodes) {
+					delete this.loaded.nodes[type];
+				}
+			}
+
+			for (const type in loader.known.credentials) {
+				if (type in this.loaded.credentials) {
+					delete this.loaded.credentials[type];
+				}
+			}
+		}
 
 		// Nodes and credentials that have been loaded immediately
 		for (const nodeTypeName in loader.nodeTypes) {

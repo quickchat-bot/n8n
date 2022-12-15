@@ -137,6 +137,7 @@ importers:
       bull: ^3.19.0
       callsites: ^3.1.0
       change-case: ^4.1.1
+      chokidar: 3.5.2
       class-validator: ^0.13.1
       client-oauth2: ^4.2.5
       compression: ^1.7.4
@@ -223,6 +224,7 @@ importers:
       bull: 3.29.3
       callsites: 3.1.0
       change-case: 4.1.2
+      chokidar: 3.5.2
       class-validator: 0.13.2
       client-oauth2: 4.3.3
       compression: 1.7.4
@@ -231,7 +233,7 @@ importers:
       cookie-parser: 1.4.6
       crypto-js: 4.1.1
       csrf: 3.1.0
-      curlconverter: 3.21.0
+      curlconverter: 3.21.0_chokidar@3.5.2
       dotenv: 8.6.0
       express: 4.18.2
       express-openapi-validator: 4.13.8
@@ -9685,14 +9687,14 @@ packages:
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
 
-  /curlconverter/3.21.0:
+  /curlconverter/3.21.0_chokidar@3.5.2:
     resolution: {integrity: sha512-DXCnp1A/Xa69FujksUfdvWQFAnIn/C+4Wuv8t+UVdZkF/lY5bzj98GGKOGme7V/ckSHDLxE29Xp76sJ5Cpsp5A==}
     hasBin: true
     dependencies:
       '@curlconverter/yargs': 0.0.2
       cookie: 0.4.2
       jsesc: 3.0.2
-      nunjucks: 3.2.3
+      nunjucks: 3.2.3_chokidar@3.5.2
       query-string: 7.1.1
       string.prototype.startswith: 1.0.0
       yamljs: 0.3.0
@@ -16184,7 +16186,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /nunjucks/3.2.3:
+  /nunjucks/3.2.3_chokidar@3.5.2:
     resolution: {integrity: sha512-psb6xjLj47+fE76JdZwskvwG4MYsQKXUtMsPh6U0YMvmyjRtKRFcxnlXGWglNybtNTNVmGdp94K62/+NjF5FDQ==}
     engines: {node: '>= 6.9.0'}
     hasBin: true
@@ -16196,6 +16198,7 @@ packages:
     dependencies:
       a-sync-waterfall: 1.0.1
       asap: 2.0.6
+      chokidar: 3.5.2
       commander: 5.1.0
     dev: false
 

@@ -541,7 +541,8 @@ export type IPushData =
 	| PushDataConsoleMessage
 	| PushDataReloadNodeType
 	| PushDataRemoveNodeType
-	| PushDataTestWebhook;
+	| PushDataTestWebhook
+	| PushDataNodeDescriptionUpdated;
 
 type PushDataExecutionFinished = {
 	data: IPushDataExecutionFinished;
@@ -581,6 +582,11 @@ type PushDataRemoveNodeType = {
 type PushDataTestWebhook = {
 	data: IPushDataTestWebhook;
 	type: 'testWebhookDeleted' | 'testWebhookReceived';
+};
+
+type PushDataNodeDescriptionUpdated = {
+	data: undefined;
+	type: 'nodeDescriptionUpdated';
 };
 
 export interface IPushDataExecutionFinished {

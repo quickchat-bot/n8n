@@ -47,6 +47,13 @@ class NodeTypesClass implements INodeTypes {
 		return NodeHelpers.getVersionedNodeType(this.getNode(nodeType).type, version);
 	}
 
+	updateNodeTypes() {
+		for (const nodeTypeData of Object.values(this.loadedNodes)) {
+			const nodeType = NodeHelpers.getVersionedNodeType(nodeTypeData.type);
+			this.applySpecialNodeParameters(nodeType);
+		}
+	}
+
 	private getNode(type: string): LoadedClass<INodeType | IVersionedNodeType> {
 		const loadedNodes = this.loadedNodes;
 		if (type in loadedNodes) {
@@ -68,6 +75,17 @@ class NodeTypesClass implements INodeTypes {
 		const applyParameters = NodeHelpers.getSpecialNodeParameters(nodeType);
 		if (applyParameters.length) {
 			nodeType.description.properties.unshift(...applyParameters);
+		}
+	}
+
+	private updateSpecialNodeParameters(nodeType: INodeType) {
+		const applyParameters = NodeHelpers.getSpecialNodeParameters(nodeType);
+		applyParameters.reverse();
+		for (const parameter of applyParameters) {
+			const exists = nodeType.description.properties.find((p) => p.name === parameter.name);
+			if (!exists) {
+				nodeType.description.properties.unshift(parameter);
+			}
 		}
 	}
 
