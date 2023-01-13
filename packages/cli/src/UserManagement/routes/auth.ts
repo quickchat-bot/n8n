@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { Request, Response } from 'express';
 import { IDataObject } from 'n8n-workflow';
+import passport from 'passport';
 import * as Db from '@/Db';
 import * as ResponseHelper from '@/ResponseHelper';
 import { AUTH_COOKIE_NAME } from '@/constants';
@@ -11,6 +12,7 @@ import { compareHash, sanitizeUser } from '../UserManagementHelper';
 import { User } from '@db/entities/User';
 import type { LoginRequest } from '@/requests';
 import config from '@/config';
+import bodyParser from 'body-parser';
 
 export function authenticationMethods(this: N8nApp): void {
 	/**
@@ -109,5 +111,29 @@ export function authenticationMethods(this: N8nApp): void {
 				loggedOut: true,
 			};
 		}),
+	);
+
+	this.app.post(
+		`/${this.restEndpoint}/login/saml/callback`,
+		bodyParser.urlencoded({ extended: false }),
+		passport.authenticate('saml', {
+			failureRedirect: '/',
+			failureFlash: true,
+		}),
+		function (req, res) {
+			console.log('req: ', req);
+			res.redirect('/');
+		},
+	);
+
+	this.app.get(
+		`/${this.restEndpoint}/login/saml`,
+		passport.authenticate('saml', {
+			failureRedirect: '/',
+			failureFlash: true,
+		}),
+		function (req, res) {
+			res.redirect('/');
+		},
 	);
 }

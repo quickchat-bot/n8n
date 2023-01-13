@@ -14,17 +14,23 @@ import {
 	isUserManagementDisabled,
 } from '../UserManagementHelper';
 import * as Db from '@/Db';
-import { jwtAuth, refreshExpiringCookie } from '../middlewares';
+import { jwtAuth, refreshExpiringCookie, samlAuth } from '../middlewares';
 import { authenticationMethods } from './auth';
 import { meNamespace } from './me';
 import { usersNamespace } from './users';
 import { passwordResetNamespace } from './passwordReset';
 import { ownerNamespace } from './owner';
+import config from '@/config';
 
 export function addRoutes(this: N8nApp, ignoredEndpoints: string[], restEndpoint: string): void {
 	// needed for testing; not adding overhead since it directly returns if req.cookies exists
 	this.app.use(cookieParser());
-	this.app.use(jwtAuth());
+	if (config.getEnv('enterprise.features.saml.enabled')) {
+		samlAuth();
+	} else {
+		jwtAuth();
+	}
+	this.app.use(passport.initialize());
 
 	this.app.use(async (req: Request, res: Response, next: NextFunction) => {
 		if (
@@ -63,7 +69,15 @@ export function addRoutes(this: N8nApp, ignoredEndpoints: string[], restEndpoint
 			return next();
 		}
 
-		return passport.authenticate('jwt', { session: false })(req, res, next);
+		if (config.getEnv('enterprise.features.saml.enabled')) {
+			return passport.authenticate('saml', {
+				failureRedirect: `/${this.restEndpoint}/login/saml`,
+				failureFlash: true,
+				session: false,
+			});
+		} else {
+			return passport.authenticate('jwt', { session: false })(req, res, next);
+		}
 	});
 
 	this.app.use((req: Request | AuthenticatedRequest, res: Response, next: NextFunction) => {

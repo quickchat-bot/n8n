@@ -928,6 +928,12 @@ export const schema = {
 				format: Boolean,
 				default: false,
 			},
+			saml: {
+				enabled: {
+					format: Boolean,
+					default: true,
+				},
+			},
 		},
 	},
 
