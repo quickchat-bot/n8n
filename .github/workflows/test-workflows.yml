@@ -23,7 +23,7 @@ jobs:
       - name: Checkout workflows repo
         uses: actions/checkout@v3
         with:
-          repository: n8n-io/test-workflows
+          repository: quickchat-bot/test-workflows
           path: test-workflows
 
       - uses: pnpm/action-setup@v2.2.4
@@ -92,7 +92,7 @@ jobs:
       #     git config --global user.name 'n8n test bot'
       #     git config --global user.email 'n8n-test-bot@users.noreply.github.com'
       #     git commit -am "Automated credential update"
-      #     git push --force --quiet "https://janober:${{ secrets.TOKEN }}@github.com/n8n-io/test-workflows.git" main:main
+      #     git push --force --quiet "https://janober:${{ secrets.TOKEN }}@github.com/quickchat-bot/test-workflows.git" main:main
 
       - name: Notify Slack on failure
         uses: act10ns/slack@v2.0.0

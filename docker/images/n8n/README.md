@@ -4,7 +4,7 @@
 
 n8n is an extendable workflow automation tool. With a [fair-code](http://faircode.io) distribution model, n8n will always have visible source code, be available to self-host, and allow you to add your own custom functions, logic and apps. n8n's node-based approach makes it highly versatile, enabling you to connect anything to everything.
 
-<a href="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot.png"><img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot.png" alt="n8n.io - Screenshot"></a>
+<a href="https://raw.githubusercontent.com/quickchat-bot/n8n/master/assets/n8n-screenshot.png"><img src="https://raw.githubusercontent.com/quickchat-bot/n8n/master/assets/n8n-screenshot.png" alt="n8n.io - Screenshot"></a>
 
 ## Contents
 
@@ -139,7 +139,7 @@ docker run -it --rm \
 	n8n start
 ```
 
-A full working setup with docker-compose can be found [here](https://github.com/n8n-io/n8n/blob/master/docker/compose/withPostgres/README.md)
+A full working setup with docker-compose can be found [here](https://github.com/quickchat-bot/n8n/blob/master/docker/compose/withPostgres/README.md)
 
 #### Use with MySQL
 
@@ -259,10 +259,10 @@ check out our [job posts](https://apply.workable.com/n8n/)
 ## Upgrading
 
 Before you upgrade to the latest version make sure to check here if there are any breaking changes which concern you:
-[Breaking Changes](https://github.com/n8n-io/n8n/blob/master/packages/cli/BREAKING-CHANGES.md)
+[Breaking Changes](https://github.com/quickchat-bot/n8n/blob/master/packages/cli/BREAKING-CHANGES.md)
 
 ## License
 
-n8n is [fair-code](http://faircode.io) distributed under the [**Sustainable Use License**](https://github.com/n8n-io/n8n/blob/master/packages/cli/LICENSE.md).
+n8n is [fair-code](http://faircode.io) distributed under the [**Sustainable Use License**](https://github.com/quickchat-bot/n8n/blob/master/packages/cli/LICENSE.md).
 
 Additional information about the license can be found in the [docs](https://docs.n8n.io/reference/license/).

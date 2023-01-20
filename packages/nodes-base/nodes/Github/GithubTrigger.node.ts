@@ -77,7 +77,7 @@ export class GithubTrigger implements INodeType {
 				type: 'string',
 				default: '',
 				required: true,
-				placeholder: 'n8n-io',
+				placeholder: 'quickchat-bot',
 				description: 'Owner of the repsitory',
 			},
 			{

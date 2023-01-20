@@ -238,7 +238,7 @@ export const buildFields: INodeProperties[] = [
 				resource: ['build'],
 			},
 		},
-		placeholder: 'n8n-io/n8n',
+		placeholder: 'quickchat-bot/n8n',
 		default: '',
 		description: 'Same as {ownerName}/{repositoryName}',
 	},

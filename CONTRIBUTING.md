@@ -132,7 +132,7 @@ checked out and set up:
 4. Add the original n8n repository as `upstream` to your forked repository
 
    ```
-   git remote add upstream https://github.com/n8n-io/n8n.git
+   git remote add upstream https://github.com/quickchat-bot/n8n.git
    ```
 
 5. Install all dependencies of all modules and link them together:
@@ -201,7 +201,7 @@ Learn about [building nodes](https://docs.n8n.io/integrations/creating-nodes/) t
 
 ## Extend documentation
 
-The repository for the n8n documentation on [docs.n8n.io](https://docs.n8n.io) can be found [here](https://github.com/n8n-io/n8n-docs).
+The repository for the n8n documentation on [docs.n8n.io](https://docs.n8n.io) can be found [here](https://github.com/quickchat-bot/n8n-docs).
 
 ## Contributor License Agreement
 

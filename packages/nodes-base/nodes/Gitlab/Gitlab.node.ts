@@ -237,7 +237,7 @@ export class Gitlab implements INodeType {
 				type: 'string',
 				default: '',
 				required: true,
-				placeholder: 'n8n-io',
+				placeholder: 'quickchat-bot',
 				description: 'User, group or namespace of the project',
 			},
 			{

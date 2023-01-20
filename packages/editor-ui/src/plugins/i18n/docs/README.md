@@ -273,7 +273,7 @@ Allowed keys: `displayName`, `description`, `placeholder`
 	name: 'owner', // key to use in translation
 	type: 'string',
 	required: true,
-	placeholder: 'n8n-io',
+	placeholder: 'quickchat-bot',
 	description: 'Owner of the repository.',
 },
 ```
@@ -281,7 +281,7 @@ Allowed keys: `displayName`, `description`, `placeholder`
 ```json
 {
 	"nodeView.owner.displayName": "🇩🇪 Repository Owner",
-	"nodeView.owner.placeholder": "🇩🇪 n8n-io",
+	"nodeView.owner.placeholder": "🇩🇪 quickchat-bot",
 	"nodeView.owner.description": "🇩🇪 Owner of the repository"
 }
 ```

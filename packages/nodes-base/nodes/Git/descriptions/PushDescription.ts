@@ -18,7 +18,7 @@ export const pushFields: INodeProperties[] = [
 				name: 'targetRepository',
 				type: 'string',
 				default: '',
-				placeholder: 'https://github.com/n8n-io/n8n',
+				placeholder: 'https://github.com/quickchat-bot/n8n',
 				description: 'The URL or path of the repository to push to',
 			},
 		],

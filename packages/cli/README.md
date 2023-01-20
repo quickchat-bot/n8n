@@ -4,7 +4,7 @@
 
 n8n is a free and open [fair-code](http://faircode.io) distributed node-based Workflow Automation Tool. You can self-host n8n, easily extend it, and even use it with internal tools.
 
-<a href="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot.png"><img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot.png" alt="n8n.io - Screenshot"></a>
+<a href="https://raw.githubusercontent.com/quickchat-bot/n8n/master/assets/n8n-screenshot.png"><img src="https://raw.githubusercontent.com/quickchat-bot/n8n/master/assets/n8n-screenshot.png" alt="n8n.io - Screenshot"></a>
 
 ## Contents
 
@@ -73,7 +73,7 @@ docker run -it --rm \
 
 n8n also offers a Docker image for Raspberry Pi: `n8nio/n8n:latest-rpi`.
 
-Refer to the [documentation](https://github.com/n8n-io/n8n/blob/master/docker/images/n8n/README.md) for more information on the Docker setup.
+Refer to the [documentation](https://github.com/quickchat-bot/n8n/blob/master/docker/images/n8n/README.md) for more information on the Docker setup.
 
 ### Install with npm
 
@@ -121,7 +121,7 @@ You can create custom nodes for n8n. Follow the instructions mentioned in the do
 
 ✨ Do you want to contribute a feature?
 
-The [CONTRIBUTING guide](https://github.com/n8n-io/n8n/blob/master/CONTRIBUTING.md) will help you set up your development environment.
+The [CONTRIBUTING guide](https://github.com/quickchat-bot/n8n/blob/master/CONTRIBUTING.md) will help you set up your development environment.
 
 You can find more information on how you can contribute to the project on our documentation: [How can I contribute?](https://docs.n8n.io/reference/contributing.html)
 
@@ -149,6 +149,6 @@ You can also find breaking changes here: [Breaking Changes](./BREAKING-CHANGES.m
 
 ## License
 
-n8n is [fair-code](http://faircode.io) distributed under the [**Sustainable Use License**](https://github.com/n8n-io/n8n/blob/master/packages/cli/LICENSE.md).
+n8n is [fair-code](http://faircode.io) distributed under the [**Sustainable Use License**](https://github.com/quickchat-bot/n8n/blob/master/packages/cli/LICENSE.md).
 
 Additional information about the license can be found in the [docs](https://docs.n8n.io/reference/license/).

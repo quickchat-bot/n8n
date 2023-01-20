@@ -73,7 +73,7 @@ export const pipelineFields: INodeProperties[] = [
 			},
 		},
 		default: '',
-		placeholder: 'n8n-io/n8n',
+		placeholder: 'quickchat-bot/n8n',
 		description: 'Project slug in the form org-name/repo-name',
 	},
 

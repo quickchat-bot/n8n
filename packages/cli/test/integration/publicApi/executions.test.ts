@@ -272,7 +272,7 @@ test('GET /executions should retrieve all successful executions', async () => {
 	expect(waitTill).toBeNull();
 });
 
-// failing on Postgres and MySQL - ref: https://github.com/n8n-io/n8n/pull/3834
+// failing on Postgres and MySQL - ref: https://github.com/quickchat-bot/n8n/pull/3834
 test.skip('GET /executions should paginate two executions', async () => {
 	const owner = await testDb.createUser({ globalRole: globalOwnerRole, apiKey: randomApiKey() });
 

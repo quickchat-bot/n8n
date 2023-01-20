@@ -393,7 +393,7 @@ export class Github implements INodeType {
 						operation: ['invite'],
 					},
 				},
-				placeholder: 'n8n-io',
+				placeholder: 'quickchat-bot',
 				description: 'Owner of the repository',
 			},
 			{

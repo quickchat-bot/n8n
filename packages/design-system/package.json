@@ -10,7 +10,7 @@
   "main": "src/main.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/n8n-io/n8n.git"
+    "url": "git+https://github.com/quickchat-bot/n8n.git"
   },
   "scripts": {
     "clean": "rimraf dist .turbo",

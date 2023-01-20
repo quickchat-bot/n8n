@@ -7,7 +7,7 @@ will always have visible source code, be available to self-host, and allow you t
 functions, logic and apps. n8n's node-based approach makes it highly versatile, enabling you to connect
 anything to everything.
 
-![n8n.io - Screenshot](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot.png)
+![n8n.io - Screenshot](https://raw.githubusercontent.com/quickchat-bot/n8n/master/assets/n8n-screenshot.png)
 
 ## Demo
 
@@ -26,7 +26,7 @@ The official n8n documentation can be found under: [https://docs.n8n.io](https:/
 Additional information and example workflows on the n8n.io website: [https://n8n.io](https://n8n.io)
 
 The release notes can be found [here](https://docs.n8n.io/reference/release-notes/) and the list of breaking
-changes [here](https://github.com/n8n-io/n8n/blob/master/packages/cli/BREAKING-CHANGES.md).
+changes [here](https://github.com/quickchat-bot/n8n/blob/master/packages/cli/BREAKING-CHANGES.md).
 
 ## Usage
 
@@ -75,14 +75,14 @@ Oberhauser, Founder and CEO, n8n.io**
 ## Development setup
 
 Have you found a bug :bug: ? Or maybe you have a nice feature :sparkles: to contribute ? The
-[CONTRIBUTING guide](https://github.com/n8n-io/n8n/blob/master/CONTRIBUTING.md) will help you get your
+[CONTRIBUTING guide](https://github.com/quickchat-bot/n8n/blob/master/CONTRIBUTING.md) will help you get your
 development environment ready in minutes.
 
 ## License
 
 n8n is [fair-code](http://faircode.io) distributed under the
-[**Sustainable Use License**](https://github.com/n8n-io/n8n/blob/master/packages/cli/LICENSE.md) and the
-[**n8n Enterprise License**](https://github.com/n8n-io/n8n/blob/master/packages/cli/LICENSE_EE.md).
+[**Sustainable Use License**](https://github.com/quickchat-bot/n8n/blob/master/packages/cli/LICENSE.md) and the
+[**n8n Enterprise License**](https://github.com/quickchat-bot/n8n/blob/master/packages/cli/LICENSE_EE.md).
 
 Additional information about the license model can be found in the
 [docs](https://docs.n8n.io/reference/license/).

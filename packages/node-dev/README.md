@@ -219,6 +219,6 @@ All properties are optional. However, most only work when the node-property is o
 
 ## License
 
-n8n is [fair-code](http://faircode.io) distributed under the [**Sustainable Use License**](https://github.com/n8n-io/n8n/blob/master/packages/cli/LICENSE.md).
+n8n is [fair-code](http://faircode.io) distributed under the [**Sustainable Use License**](https://github.com/quickchat-bot/n8n/blob/master/packages/cli/LICENSE.md).
 
 Additional information about the license can be found in the [docs](https://docs.n8n.io/reference/license/).
