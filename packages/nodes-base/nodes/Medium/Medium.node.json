@@ -1,0 +1,25 @@
+{
+	"node": "n8n-nodes-base.medium",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/medium"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.medium/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Learn how to automatically cross-post your content with n8n",
+				"icon": "✍️",
+				"url": "https://quicksales.vn/blog/learn-how-to-automatically-cross-post-your-content-with-n8n/"
+			}
+		]
+	}
+}

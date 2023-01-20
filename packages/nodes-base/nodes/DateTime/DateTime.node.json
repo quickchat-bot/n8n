@@ -1,0 +1,28 @@
+{
+	"node": "n8n-nodes-base.dateTime",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Core Nodes"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/core-nodes/n8n-nodes-base.datetime/"
+			}
+		],
+		"generic": [
+			{
+				"label": "6 e-commerce workflows to power up your Shopify s",
+				"icon": "store",
+				"url": "https://quicksales.vn/blog/no-code-ecommerce-workflow-automations/"
+			},
+			{
+				"label": "How to get started with CRM automation (with 3 no-code workflow ideas",
+				"icon": "👥",
+				"url": "https://quicksales.vn/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
+			}
+		]
+	},
+	"subcategories": {
+		"Core Nodes": ["Helpers", "Data Transformation"]
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-base.intercom",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Sales"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/intercom"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.intercom/"
+			}
+		]
+	}
+}

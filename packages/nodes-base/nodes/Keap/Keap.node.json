@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-base.keap",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Sales", "Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/keap"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.keap/"
+			}
+		]
+	},
+	"alias": ["Infusionsoft"]
+}

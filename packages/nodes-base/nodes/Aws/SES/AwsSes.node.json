@@ -1,0 +1,29 @@
+{
+	"node": "n8n-nodes-base.awsSes",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/aws"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.awsses/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Why business process automation with n8n can change your daily life",
+				"icon": "🧬",
+				"url": "https://quicksales.vn/blog/why-business-process-automation-with-n8n-can-change-your-daily-life/"
+			},
+			{
+				"label": "7 no-code workflow automations for Amazon Web Services",
+				"url": "https://quicksales.vn/blog/aws-workflow-automation/"
+			}
+		]
+	}
+}

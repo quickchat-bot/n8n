@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-base.baserow",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/baserow"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.baserow/"
+			}
+		],
+		"generic": []
+	}
+}

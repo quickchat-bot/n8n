@@ -1,0 +1,25 @@
+{
+	"node": "n8n-nodes-base.orbit",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Analytics"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/orbit"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.orbit/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Migrating Community Metrics to Orbit using n8n",
+				"icon": "📈",
+				"url": "https://quicksales.vn/blog/migrating-community-metrics-to-orbit-using-n8n/"
+			}
+		]
+	}
+}

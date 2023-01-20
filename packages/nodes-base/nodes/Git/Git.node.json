@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-base.git",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Core Nodes", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/git"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/core-nodes/n8n-nodes-base.git/"
+			}
+		]
+	},
+	"subcategories": ["Helpers"]
+}

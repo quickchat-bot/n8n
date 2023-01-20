@@ -1,0 +1,73 @@
+{
+	"node": "n8n-nodes-base.mattermost",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/mattermost"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.mattermost/"
+			}
+		],
+		"generic": [
+			{
+				"label": "How to host virtual coffee breaks with n8n",
+				"icon": "☕️",
+				"url": "https://quicksales.vn/blog/how-to-host-virtual-coffee-breaks-with-n8n/"
+			},
+			{
+				"label": "Supercharging your conference registration process with n8n",
+				"icon": "🎫",
+				"url": "https://quicksales.vn/blog/supercharging-your-conference-registration-process-with-n8n/"
+			},
+			{
+				"label": "Creating triggers for n8n workflows using polling",
+				"icon": "⏲",
+				"url": "https://quicksales.vn/blog/creating-triggers-for-n8n-workflows-using-polling/"
+			},
+			{
+				"label": "5 tasks you can automate with the new Notion API ",
+				"icon": "⚡️",
+				"url": "https://quicksales.vn/blog/5-tasks-you-can-automate-with-notion-api/"
+			},
+			{
+				"label": "15 Google apps you can combine and automate to increase productivity",
+				"icon": "💡",
+				"url": "https://quicksales.vn/blog/automate-google-apps-for-productivity/"
+			},
+			{
+				"label": "The ultimate guide to automate your video collaboration with Whereby, Mattermost, and n8n",
+				"icon": "📹",
+				"url": "https://quicksales.vn/blog/the-ultimate-guide-to-automate-your-video-collaboration-with-whereby-mattermost-and-n8n/"
+			},
+			{
+				"label": "5 workflow automations for Mattermost that we love at n8n",
+				"icon": "🤖",
+				"url": "https://quicksales.vn/blog/5-workflow-automations-for-mattermost-that-we-love-at-n8n/"
+			},
+			{
+				"label": "Creating Error Workflows in n8n",
+				"icon": "🌪",
+				"url": "https://quicksales.vn/blog/creating-error-workflows-in-n8n/"
+			},
+			{
+				"label": "How to automate every step of an incident response workflow",
+				"url": "https://quicksales.vn/blog/creating-custom-incident-response-workflows-with-n8n/"
+			},
+			{
+				"label": "Learn how to use webhooks with Mattermost slash commands",
+				"icon": "🦄",
+				"url": "https://quicksales.vn/blog/learn-how-to-use-webhooks-with-mattermost-slash-commands/"
+			},
+			{
+				"label": "7 no-code workflow automations for Amazon Web Services",
+				"url": "https://quicksales.vn/blog/aws-workflow-automation/"
+			}
+		]
+	}
+}

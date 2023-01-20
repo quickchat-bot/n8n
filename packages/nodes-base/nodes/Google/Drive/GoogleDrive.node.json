@@ -1,0 +1,34 @@
+{
+	"node": "n8n-nodes-base.googleDrive",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/credentials/google/oauth-single-service/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.googledrive/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Hey founders! Your business doesn't need you to operate",
+				"icon": " 🖥️",
+				"url": "https://quicksales.vn/blog/your-business-doesnt-need-you-to-operate/"
+			},
+			{
+				"label": "Why this Product Manager loves workflow automation with n8n",
+				"icon": "🧠",
+				"url": "https://quicksales.vn/blog/why-this-product-manager-loves-workflow-automation-with-n8n/"
+			},
+			{
+				"label": "7 no-code workflow automations for Amazon Web Services",
+				"url": "https://quicksales.vn/blog/aws-workflow-automation/"
+			}
+		]
+	}
+}

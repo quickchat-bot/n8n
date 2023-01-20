@@ -1,0 +1,25 @@
+{
+	"node": "n8n-nodes-base.shopifyTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Sales"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/shopify"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/trigger-nodes/n8n-nodes-base.shopifytrigger/"
+			}
+		],
+		"generic": [
+			{
+				"label": "6 e-commerce workflows to power up your Shopify s",
+				"icon": "store",
+				"url": "https://quicksales.vn/blog/no-code-ecommerce-workflow-automations/"
+			}
+		]
+	}
+}

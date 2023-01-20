@@ -1,0 +1,25 @@
+{
+	"node": "n8n-nodes-base.coda",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/coda"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.coda/"
+			}
+		],
+		"generic": [
+			{
+				"label": "How Goomer automated their operations with over 200 n8n workflows",
+				"icon": "🛵",
+				"url": "https://quicksales.vn/blog/how-goomer-automated-their-operations-with-over-200-n8n-workflows/"
+			}
+		]
+	}
+}

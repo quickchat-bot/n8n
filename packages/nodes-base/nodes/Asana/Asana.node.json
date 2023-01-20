@@ -1,0 +1,25 @@
+{
+	"node": "n8n-nodes-base.asana",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/asana"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.asana/"
+			}
+		],
+		"generic": [
+			{
+				"label": "How a digital strategist uses n8n for online marketing",
+				"icon": "💻",
+				"url": "https://quicksales.vn/blog/how-a-digital-strategist-uses-n8n-for-online-marketing/"
+			}
+		]
+	}
+}

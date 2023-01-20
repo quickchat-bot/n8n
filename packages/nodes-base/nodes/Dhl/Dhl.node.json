@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-base.dhl",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Miscellaneous"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/dhl"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.dhl/"
+			}
+		]
+	},
+	"alias": ["Shipping"]
+}

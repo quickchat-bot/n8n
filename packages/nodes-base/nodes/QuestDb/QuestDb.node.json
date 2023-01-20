@@ -1,0 +1,25 @@
+{
+	"node": "n8n-nodes-base.questDb",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/questDb"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.questdb/"
+			}
+		],
+		"generic": [
+			{
+				"label": "A low-code bitcoin ticker built with QuestDB and quicksales.vn",
+				"icon": "📈",
+				"url": "https://quicksales.vn/blog/a-low-code-bitcoin-ticker-built-with-questdb-and-quickchat-bot/"
+			}
+		]
+	}
+}

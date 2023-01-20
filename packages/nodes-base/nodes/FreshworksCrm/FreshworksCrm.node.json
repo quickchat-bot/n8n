@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-base.freshworksCrm",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Sales"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/freshworksCrm"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.freshworkscrm/"
+			}
+		]
+	},
+	"alias": ["Freshdesk"]
+}

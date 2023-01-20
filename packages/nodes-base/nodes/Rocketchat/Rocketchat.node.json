@@ -1,0 +1,25 @@
+{
+	"node": "n8n-nodes-base.rocketchat",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/credentials/rocketchat"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.quicksales.vn/integrations/builtin/app-nodes/n8n-nodes-base.rocketchat/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Automate Designs with Bannerbear and n8n",
+				"icon": "🎨",
+				"url": "https://quicksales.vn/blog/automate-designs-with-bannerbear-and-n8n/"
+			}
+		]
+	}
+}
